@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <!-- [...] -->
+  <meta charset="UTF-8">
+  <title>Calculateur 3000</title>
+  <style>
+    * { font-family: 'Pangea Afrikan', sans-serif; }
+    body {
+      padding: 3rem;
+      background: #111016;
+      color: #F0FFFF;
+      font-size: 20px;
+    }
+    input {
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+    }
+  </style>
+
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+</head>
+<body>
+  <h1>📠 Calculateur 3000</h1>
+
+  <form id="calculator">
+    <input type="number" name="a" />
+    + <input type="number" name="b" />
+    = <span id="result">0</span>
+  </form>
+
+  <script
+    type="application/javascript"
+    src="calculator.js"
+  ></script>
+</body>
+</html>
