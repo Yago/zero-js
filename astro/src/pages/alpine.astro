@@ -1,0 +1,25 @@
+---
+import '../styles/globals.css';
+---
+<!doctype html>
+<html lang="fr">
+<head>
+	<!-- [...] -->
+	<meta charset="UTF-8">
+	<title>Calculateur 3000</title>
+</head>
+<body>
+	<h1>📠 Calculateur 3000</h1>
+
+	<form x-data="{ a: 0, b: 0 }">
+		<input type="number" @keyup="a = $event.target.value" />
+		+ <input type="number" @keyup="b = $event.target.value" />
+		= <span x-text="+a + +b">0</span>
+	</form>
+
+	<script>
+		import Alpine from 'alpinejs';
+		Alpine.start();
+	</script>
+</body>
+</html>
